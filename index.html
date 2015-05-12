@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Execution plan viewer</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="jquery-2.1.0.min.js" type="text/javascript"></script>
+    <script src="arbor.js" type="text/javascript"></script>
+    <script src="graphics.js" type="text/javascript"></script>
+    <script src="plan_renderer.js" type="text/javascript"></script>
+    <script src="lodash.js" type="text/javascript"></script>
+</head>
+<body>
+<div>
+    Execution plan:<input type="file" name="ep" id="execution-plan-input"><br>
+
+    <h1 id="flow_name"></h1>
+</div>
+<div id="canvasContainer" class="canvas-container">
+    <canvas id="viewport" width="800" height="600"></canvas>
+</div>
+
+
+<div class="magic-console">
+    <pre id="sysOut"></pre>
+</div>
+
+
+<script src="plan_func.js" type="text/javascript"></script>
+</body>
+</html>
